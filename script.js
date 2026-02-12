@@ -526,25 +526,25 @@ const subjectData = {
         explanation: "Arbitrary decisions have no clear rule or reason." 
     },
     { 
-        passage: "VOCAB: A 'Protagonist' is the:", 
+        passage: "VOCAB: A Protagonist is the:", 
         options: ["Main character", "Villain", "Narrator", "Assistant"], 
         correct: 0, 
         explanation: "The central figure of a story." 
     },
     { 
-        passage: "VOCAB: What is 'Juxtaposition'?", 
+        passage: "VOCAB: What is Juxtaposition?", 
         options: ["A journey", "Placing two things together for contrast", "A closing statement", "A type of rhyme"], 
         correct: 1, 
         explanation: "It highlights the differences between two things." 
     },
     { 
-        passage: "VOCAB: 'Ambiguous' means:", 
+        passage: "VOCAB: Ambiguous means:", 
         options: ["Very clear", "Open to more than one interpretation", "Extremely fast", "Quiet"], 
         correct: 1, 
         explanation: "Ambiguity means it can be understood in multiple ways." 
     },
     { 
-        passage: "VOCAB: If you are 'Vindicated', you are:", 
+        passage: "VOCAB: If you are Vindicated, you are:", 
         options: ["Found guilty", "Cleared of blame", "Pushed down", "Forgotten"], 
         correct: 1, 
         explanation: "To vindicate is to prove someone was not at fault." 
@@ -556,19 +556,19 @@ const subjectData = {
         explanation: "The first three are legal roles; the last is not." 
     },
     { 
-        passage: "VOCAB: An 'Adversary' is a/an:", 
+        passage: "VOCAB: An Adversary is a/an:", 
         options: ["Friend", "Opponent", "Teacher", "Tool"], 
         correct: 1, 
         explanation: "An adversary is an enemy or rival." 
     },
     { 
-        passage: "VOCAB: What is 'Alliteration'?", 
+        passage: "VOCAB: What is Alliteration?", 
         options: ["Rhyming words", "Repetition of initial consonant sounds", "A long essay", "A type of metaphor"], 
         correct: 1, 
-        explanation: "e.g., 'Safe and sound'." 
+        explanation: "e.g., Safe and sound." 
     },
     { 
-        passage: "VOCAB: If you are 'Resilient', you:", 
+        passage: "VOCAB: If you are Resilient, you:", 
         options: ["Break easily", "Recover quickly from difficulty", "Speak loudly", "Are very old"], 
         correct: 1, 
         explanation: "Resilience is the ability to bounce back." 
@@ -756,6 +756,7 @@ function endTest() {
         feedback.innerHTML += `<p class="text-sm"><strong>Q:</strong> ${item.q}<br><span class="text-blue-600">Logic: ${item.explanation}</span></p>`;
     });
 }
+
 
 
 
