@@ -502,7 +502,7 @@ const subjectData = {
         explanation: "This is a basic deductive syllogism." 
     },
     { 
-        passage: "VOCAB: What is an 'Allegory'?", 
+        passage: "VOCAB: What is an Allegory?", 
         options: ["A short personal story", "A story with a hidden moral or political meaning", "A mathematical rule", "A list of definitions"], 
         correct: 1, 
         explanation: "An allegory uses symbols to tell a deeper story." 
@@ -514,7 +514,7 @@ const subjectData = {
         explanation: "Obsolete means out of date." 
     },
     { 
-        passage: "VOCAB: What is a 'Euphemism'?", 
+        passage: "VOCAB: What is a Euphemism:", 
         options: ["A loud sound", "A mild word used to replace a harsh one", "A type of bird", "A logical error"], 
         correct: 1, 
         explanation: "e.g., 'Passed away' instead of 'died'." 
@@ -532,7 +532,7 @@ const subjectData = {
         explanation: "The central figure of a story." 
     },
     { 
-        passage: "VOCAB: What is Juxtaposition?", 
+        passage: "VOCAB: What is Juxtaposition:", 
         options: ["A journey", "Placing two things together for contrast", "A closing statement", "A type of rhyme"], 
         correct: 1, 
         explanation: "It highlights the differences between two things." 
@@ -544,7 +544,7 @@ const subjectData = {
         explanation: "Ambiguity means it can be understood in multiple ways." 
     },
     { 
-        passage: "VOCAB: If you are Vindicated, you are:", 
+        passage: "VOCAB: If you are vindicated, you are:", 
         options: ["Found guilty", "Cleared of blame", "Pushed down", "Forgotten"], 
         correct: 1, 
         explanation: "To vindicate is to prove someone was not at fault." 
@@ -562,7 +562,7 @@ const subjectData = {
         explanation: "An adversary is an enemy or rival." 
     },
     { 
-        passage: "VOCAB: What is Alliteration?", 
+        passage: "VOCAB: What is Alliteration:", 
         options: ["Rhyming words", "Repetition of initial consonant sounds", "A long essay", "A type of metaphor"], 
         correct: 1, 
         explanation: "e.g., Safe and sound." 
@@ -756,6 +756,7 @@ function endTest() {
         feedback.innerHTML += `<p class="text-sm"><strong>Q:</strong> ${item.q}<br><span class="text-blue-600">Logic: ${item.explanation}</span></p>`;
     });
 }
+
 
 
 
