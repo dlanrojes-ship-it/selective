@@ -209,14 +209,14 @@ const subjectData = {
         explanation: "It refers to the serious nature of legal decisions." 
     },
     { 
-        passage: "TEXT A: ...thick with the scent of old paper and polished wood.",
+        passage: "TEXT A: thick with the scent of old paper and polished wood.",
         q: "This sensory detail appeals to the sense of:", 
         options: ["Sight", "Smell", "Touch", "Taste"], 
         correct: 1, 
         explanation: "Scent refers to the sense of smell." 
     },
     { 
-        passage: "TEXT A: Julian walked softly...",
+        passage: "TEXT A: Julian walked softly",
         q: "Why does Julian walk softly?", 
         options: ["He is a criminal", "Out of respect for the serious environment", "His shoes are broken", "He is lost"], 
         correct: 1, 
@@ -230,28 +230,28 @@ const subjectData = {
         explanation: "A factory produces things; the court 'produces' order." 
     },
     { 
-        passage: "TEXT A: ...pillars reaching toward a grey sky.",
+        passage: "TEXT A: pillars reaching toward a grey sky.",
         q: "The 'grey sky' adds to the tone of:", 
         options: ["Happiness", "Solemnity/Serious mood", "Anger", "Confusion"], 
         correct: 1, 
         explanation: "Grey skies often symbolize serious or somber atmospheres." 
     },
     { 
-        passage: "TEXT A: Julian walked softly...",
+        passage: "TEXT A: Julian walked softly",
         q: "What is the opposite of 'softly'?", 
         options: ["Quietly", "Loudly", "Quickly", "Carefully"], 
         correct: 1, 
         explanation: "Loudly is the antonym." 
     },
     { 
-        passage: "TEXT A: ...history of decisions made within these walls.",
+        passage: "TEXT A: history of decisions made within these walls.",
         q: "This refers to the concept of:", 
         options: ["Precedent", "Future", "Furniture", "Art"], 
         correct: 0, 
         explanation: "Precedent is the legal history of past decisions." 
     },
     { 
-        passage: "TEXT A: ...pillars reaching toward a grey sky.",
+        passage: "TEXT A: pillars reaching toward a grey sky.",
         q: "The pillars represent:", 
         options: ["Weakness", "Stability and support", "Trees", "Windows"], 
         correct: 1, 
@@ -282,14 +282,14 @@ const subjectData = {
         explanation: "Text B states civil law seeks a remedy to make up for loss." 
     },
     { 
-        passage: "TEXT B: ...relies on the 'balance of probabilities'.",
+        passage: "TEXT B: relies on the 'balance of probabilities'.",
         q: "This standard of proof means:", 
         options: ["100% certainty", "More likely than not", "A random guess", "Scientific proof only"], 
         correct: 1, 
         explanation: "Balance of probabilities means one side is more likely to be true than the other." 
     },
     { 
-        passage: "TEXT B: ...personal grievances would lead to perpetual feuds.",
+        passage: "TEXT B: personal grievances would lead to perpetual feuds.",
         q: "A 'perpetual feud' is a conflict that:", 
         options: ["Ends quickly", "Never ends", "Is solved by a judge", "Is friendly"], 
         correct: 1, 
@@ -303,14 +303,14 @@ const subjectData = {
         explanation: "A framework is a basic structure underlying a system." 
     },
     { 
-        passage: "TEXT B: ...eroding the trust required for a stable economy.",
+        passage: "TEXT B: eroding the trust required for a stable economy.",
         q: "What does 'erode' mean?", 
         options: ["Build up", "Wear away slowly", "Clean", "Ignore"], 
         correct: 1, 
         explanation: "Erosion is the gradual destruction of something." 
     },
     { 
-        passage: "TEXT B: ...the trust required for a stable economy.",
+        passage: "TEXT B: the trust required for a stable economy.",
         q: "Why is trust needed for an economy?", 
         options: ["To buy more clothes", "So people can trade and do business safely", "To pay lawyers", "To build courthouses"], 
         correct: 1, 
@@ -324,7 +324,7 @@ const subjectData = {
         explanation: "It contrasts civil law with the punitive nature of criminal law." 
     },
     { 
-        passage: "TEXT B: ...civil law seeks 'remedy'.",
+        passage: "TEXT B: civil law seeks 'remedy'.",
         q: "If you lose money in a deal, a 'remedy' would be:", 
         options: ["An apology", "Getting the money back", "Going to jail", "Starting a feud"], 
         correct: 1, 
@@ -338,42 +338,42 @@ const subjectData = {
         explanation: "Judges apply the standard of proof to settle the dispute." 
     },
     { 
-        passage: "TEXT B: ...personal grievances...",
+        passage: "TEXT B: personal grievances",
         q: "A 'grievance' is a:", 
         options: ["Gift", "Complaint/Injustice", "New law", "Happy memory"], 
         correct: 1, 
         explanation: "A grievance is a real or imagined wrong or cause for complaint." 
     },
     { 
-        passage: "TEXT B: ...stable community.",
+        passage: "TEXT B: stable community.",
         q: "Stability in a community means it is:", 
         options: ["Changing every day", "Secure and reliable", "Dangerous", "Empty"], 
         correct: 1, 
         explanation: "Stability refers to being steady and not likely to fail." 
     },
     { 
-        passage: "TEXT B: ...resolving disagreements between individuals.",
+        passage: "TEXT B: resolving disagreements between individuals.",
         q: "Who is civil law for?", 
         options: ["Only the government", "Disputes between people/companies", "The police only", "Criminals"], 
         correct: 1, 
         explanation: "Civil law handles private disputes between parties." 
     },
     { 
-        passage: "TEXT B: ...vital framework.",
+        passage: "TEXT B:vital framework.",
         q: "If something is 'vital', it is:", 
         options: ["Unimportant", "Essential/Necessary", "Small", "Old"], 
         correct: 1, 
         explanation: "Vital means absolutely necessary for life or success." 
     },
     { 
-        passage: "TEXT B: ...without this mechanism...",
+        passage: "TEXT B: without this mechanism...",
         q: "A 'mechanism' in this context is a:", 
         options: ["Robot", "Process/Method", "Car engine", "Clock"], 
         correct: 1, 
         explanation: "It refers to the legal process as a tool for society." 
     },
     { 
-        passage: "TEXT B: ...eroding the trust.",
+        passage: "TEXT B: eroding the trust.",
         q: "What is the synonym for 'trust' in this context?", 
         options: ["Doubt", "Confidence", "Money", "Hate"], 
         correct: 1, 
@@ -396,14 +396,14 @@ const subjectData = {
         explanation: "Rain is a natural gift that nourishes the earth." 
     },
     { 
-        passage: "TEXT C: '...twice blest: It blesseth him that gives and him that takes.'",
+        passage: "TEXT C: 'twice blest: It blesseth him that gives and him that takes.'",
         q: "Mercy is better than a typical gift because:", 
         options: ["It is free", "It rewards the giver as much as the receiver", "It is legal", "It happens twice"], 
         correct: 1, 
         explanation: "Portia argues that the person showing mercy feels moral joy." 
     },
     { 
-        passage: "TEXT C: '...it becomes / The throned monarch better than his crown.'",
+        passage: "TEXT C: 'it becomes / The throned monarch better than his crown.'",
         q: "A monarch is a:", 
         options: ["Soldier", "King or Queen", "Merchant", "Judge"], 
         correct: 1, 
@@ -756,5 +756,6 @@ function endTest() {
         feedback.innerHTML += `<p class="text-sm"><strong>Q:</strong> ${item.q}<br><span class="text-blue-600">Logic: ${item.explanation}</span></p>`;
     });
 }
+
 
 
