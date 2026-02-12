@@ -164,61 +164,297 @@ const subjectData = {
     { q: "How many seconds in 1.5 hours?", options: ["3600", "5400", "7200", "900"], correct: 1, explanation: "1.5 * 3600 = 5400." },
     { q: "If yesterday was Tuesday, what is 3 days after tomorrow?", options: ["Friday", "Saturday", "Sunday", "Monday"], correct: 2, explanation: "Today is Wednesday. Tomorrow is Thursday. +3 days = Sunday." }
 ],
-   reading: [
-    // --- Literary Analysis (Quotations & Focus) ---
-    { q: "'It is not knowledge if it is grasped but not retained.' (Dante). This quotation emphasises:", options: ["Understanding", "Thoroughness", "Decisiveness", "Memory"], correct: 3, explanation: "To 'retain' knowledge means to keep it in one's memory." },
-    { q: "In a text discussing museum artifacts, which word implies a moral judgement?", options: ["Plundered", "Colonising", "Returned", "Original"], correct: 0, explanation: "'Plundered' suggests the items were stolen or taken wrongly, which is a moral stance." },
-    { q: "If a character is described as having a 'mercurial' temperament, they are:", options: ["Slow and steady", "Unpredictable and changeable", "Solid and reliable", "Cold and distant"], correct: 1, explanation: "Mercurial refers to sudden unpredictable changes in mood." },
+ reading: [
+    // --- 1-10: Inference & Context (Text 1 focus) ---
+    { 
+        passage: "TEXT 1: Elias watched as the neon lights bled into the puddles, a kaleidoscopic stain on the grey pavement... the city was a quiet sentinel. TEXT 2: Social cohesion is maintained by a triad: individuals, laws, and the legal system. TEXT 3: Portia argues justice must be tempered with mercy. Shylock demands his pound of flesh.",
+        q: "In Text 1, describing the city as a 'quiet sentinel' suggests it is:", 
+        options: ["Hostile", "Watchful and protective", "Empty", "Noisy"], 
+        correct: 1, 
+        explanation: "A sentinel is a guard; it implies the city watches over its inhabitants." 
+    },
+    { 
+        passage: "TEXT 1: The laneways were veins... Elias gripped his charcoal... TEXT 2: Individuals must follow the law. TEXT 3: Mercy is twice blest.",
+        q: "The 'kaleidoscopic stain' in Text 1 refers to:", 
+        options: ["Oil spills", "Neon light reflections", "Graffiti", "Rainwater"], 
+        correct: 1, 
+        explanation: "The text links neon lights bleeding into puddles to this visual description." 
+    },
+    { 
+        passage: "TEXT 1: There was a fragile peace here, a sense of belonging that felt as thin as the paper in his sketchbook.",
+        q: "The 'thin as paper' metaphor implies the city's harmony is:", 
+        options: ["Cheap", "Vulnerable/Easily broken", "Boring", "Flexible"], 
+        correct: 1, 
+        explanation: "Paper is delicate; the comparison suggests peace could be easily disrupted." 
+    },
+    { 
+        passage: "TEXT 1: Elias knew that one act of malice could shatter this glass-like harmony.",
+        q: "The word 'malice' in Text 1 refers to:", 
+        options: ["Kindness", "Intentional ill-will", "A type of law", "An artistic tool"], 
+        correct: 1, 
+        explanation: "Malice is the desire to cause harm, which would break the 'glass-like' peace." 
+    },
+    { 
+        passage: "The quality of mercy is not strained;It droppeth as the gentle rain from heavenUpon the place beneath. It is twice blest:It blesseth him that gives and him that takes.'Tis mightiest in the mightiest; it becomes. The throned monarch better than his crown. His sceptre shows the force of temporal power, The attribute to awe and majesty, Wherein doth sit the dread and fear of kings; But mercy is above this sceptred sway. It is enthroned in the hearts of kings; It is an attribute to God himself; And earthly power doth then show likest God's. When mercy seasons justice.",
+        q: "The comparison of mercy to 'gentle rain' suggests that mercy should be:", 
+        options: ["Heavy and overwhelming", "Natural and effortless", "Cold and unpredictable", "Rare and expensive"], 
+        correct: 1, 
+        explanation: "Disparate refers to things that are essentially different in kind." 
+    },
+    { 
+        passage: "TEXT 1: Elias gripped his charcoal, his fingers stained with the dust of a thousand sketches.",
+        q: "What does the charcoal signify for Elias?", 
+        options: ["His poverty", "His role as an observer", "His lack of hygiene", "His hatred for the city"], 
+        correct: 1, 
+        explanation: "The charcoal is his medium for recording the city's life." 
+    },
+    { 
+        passage: "TEXT 1: The laneways were the veins... neon lights bled into puddles.",
+        q: "The author's use of 'veins' and 'arteries' suggests the city is:", 
+        options: ["Dead and cold", "A living, biological entity", "A medical facility", "Under construction"], 
+        correct: 1, 
+        explanation: "These words personify the city as a living organism." 
+    },
+    { 
+        passage: "TEXT 1: Elias knew that one act of malice could shatter this glass-like harmony.",
+        q: "Identify the literary device used in 'glass-like harmony':", 
+        options: ["Simile", "Metaphor", "Alliteration", "Oxymoron"], 
+        correct: 0, 
+        explanation: "It uses 'like' to compare harmony to glass." 
+    },
+    { 
+        passage: "TEXT 1: ...leaving only the cold echo of the wind against the brickwork.",
+        q: "What mood does the final sentence of Text 1 create?", 
+        options: ["Excitement", "Desolation", "Hope", "Anger"], 
+        correct: 1, 
+        explanation: "Cold echoes and empty brickwork suggest a lonely, desolate feeling." 
+    },
+    { 
+        passage: "TEXT 1: A sense of belonging that felt as thin as the paper in his sketchbook.",
+        q: "The author’s tone in Text 1 is best described as:", 
+        options: ["Scientific", "Reflective/Poetic", "Aggressive", "Humorous"], 
+        correct: 1, 
+        explanation: "The focus on imagery and feelings makes it a reflective, poetic piece." 
+    },
 
-    // --- Tone & Perspective ---
-    { q: "Read: 'The city was a hive of frantic activity, a labyrinth of steel and noise.' The tone is:", options: ["Calm", "Overwhelming", "Joyful", "Boring"], correct: 1, explanation: "Words like 'frantic' and 'labyrinth' suggest a sense of being overwhelmed." },
-    { q: "An author writes: 'The silence in the room was deafening.' This is an example of:", options: ["Simile", "Metaphor", "Oxymoron", "Personification"], correct: 2, explanation: "An oxymoron joins two contradictory terms (silence/deafening)." },
-    { q: "'The old man’s hands were like gnarled tree roots.' This imagery suggests:", options: ["Strength", "Age and hardship", "Flexibility", "Cleanliness"], correct: 1, explanation: "Gnarled roots imply age, weather-worn toughness, and long years of use." },
+    // --- 11-20: Technical & Comparative (Text 2 focus) ---
+    { 
+        passage: "TEXT 2: Social cohesion is maintained by a triad: individuals, laws, and the legal system.",
+        q: "According to Text 2, what is the 'triad' of social cohesion?", 
+        options: ["Money, Power, Fame", "Individuals, Laws, and the Legal System", "Police, Courts, Jail", "Citizens, Government, Tax"], 
+        correct: 1, 
+        explanation: "This is explicitly stated as the three parts that keep society together." 
+    },
+    
+    { 
+        passage: "TEXT 2: A rise in violent crime leads to increased court workloads and pressure on funding.",
+        q: "Identify an 'economic cost' of crime mentioned in Text 2:", 
+        options: ["Hospital bills", "Pressure on court funding", "Loss of property", "Business reputation"], 
+        correct: 1, 
+        explanation: "The text links increased court workloads directly to funding pressure." 
+    },
+    { 
+        passage: "TEXT 2: The legal system resolves disputes impartially.",
+        q: "What does 'impartially' mean in this context?", 
+        options: ["Quickly", "Without bias or favoritism", "In secret", "Strictly following the victim"], 
+        correct: 1, 
+        explanation: "Impartiality means the law does not take sides." 
+    },
+    { 
+        passage: "TEXT 2: Individuals must fulfill their responsibility to follow the law.",
+        q: "What is the primary role of the individual in social cohesion?", 
+        options: ["To make new laws", "To follow existing laws", "To act as the police", "To pay for the courts"], 
+        correct: 1, 
+        explanation: "Following guidelines is the core responsibility of an individual." 
+    },
+    { 
+        passage: "TEXT 2: Laws provide the necessary guidelines for behaviour, ensuring expectations are clear.",
+        q: "What is the function of 'Laws' according to the report?", 
+        options: ["To punish only", "To provide guidelines/clear expectations", "To increase tax", "To make money"], 
+        correct: 1, 
+        explanation: "Laws set the 'rules of the road' for society to function." 
+    },
+    { 
+        passage: "TEXT 2: Breakdown leads to a decline in collective psychological health.",
+        q: "The term 'collective' refers to:", 
+        options: ["One person", "The whole community", "A group of scientists", "The government"], 
+        correct: 1, 
+        explanation: "Collective refers to the shared experience of the group." 
+    },
+    { 
+        passage: "TEXT 1: Elias paints the city. TEXT 2: Social cohesion is maintained by laws.",
+        q: "Compare the texts. How does the 'act of malice' in Text 1 relate to Text 2?", 
+        options: ["It is a breach of the law that erodes cohesion", "It is an artistic style", "It is unrelated to law", "It is a requirement for society"], 
+        correct: 0, 
+        explanation: "An act of malice (crime) breaks the cohesion mentioned in Text 2." 
+    },
+    { 
+        passage: "TEXT 2: Crime leads to significant economic and social costs.",
+        q: "In Text 2, 'erode' most nearly means:", 
+        options: ["Build up", "Gradually wear away", "Repair", "Highlight"], 
+        correct: 1, 
+        explanation: "Crime wears down the stability of society over time." 
+    },
+    { 
+        passage: "TEXT 2: The legal system consists of bodies that make, implement, and enforce law.",
+        q: "Which of these is NOT a role of the legal system in Text 2?", 
+        options: ["Making law", "Enforcing law", "Creating acts of malice", "Implementing law"], 
+        correct: 2, 
+        explanation: "Malice is a crime, not a function of the legal system." 
+    },
+    { 
+        passage: "TEXT 2: Social cohesion is the willingness of members to cooperate.",
+        q: "The 'social glue' in Text 2 is a metaphor for:", 
+        options: ["Literal glue", "Cooperation", "Buildings", "Money"], 
+        correct: 1, 
+        explanation: "Cohesion is the 'glue' that binds society together." 
+    },
 
-    // --- Logic in Text ---
-    { q: "Comment 1: 'Museums make history accessible.' Comment 2: 'Artifacts belong to humanity.' Which assumes objects belong to everyone?", options: ["Comment 1", "Comment 2", "Both", "Neither"], correct: 1, explanation: "Comment 2 explicitly mentions 'humanity' as a collective owner." },
-    { q: "In an argument, if a writer says 'It is inevitable that technology will fail us,' they are being:", options: ["Optimistic", "Pessimistic", "Neutral", "Uncertain"], correct: 1, explanation: "The word 'fail' and 'inevitable' show a negative future outlook." },
+    // --- 21-30: Classical & Vocab (Text 3 focus) ---
+    { 
+        passage: "TEXT 3: The quality of mercy is not strained; It droppeth as the gentle rain from heaven.",
+        q: "Portia says mercy is 'not strained'. This means it is:", 
+        options: ["Not filtered", "Not forced", "Not weak", "Not important"], 
+        correct: 1, 
+        explanation: "She means mercy must be given freely, not coerced." 
+    },
+    { 
+        passage: "TEXT 3: Shylock demands his pound of flesh, choosing the letter of the law over harmony.",
+        q: "Shylock represents which legal concept?", 
+        options: ["Mercy", "Rigid application of the law", "Social cohesion", "Individual rights"], 
+        correct: 1, 
+        explanation: "He follows the literal text (letter) of the law without compassion." 
+    },
+    { 
+        passage: "TEXT 3: Justice must be tempered with mercy.",
+        q: "To 'temper' justice with mercy means to:", 
+        options: ["Make justice angry", "Soften/Balance justice", "Remove justice", "Replace justice"], 
+        correct: 1, 
+        explanation: "Tempering means balancing a harsh thing with a softer one." 
+    },
+    { 
+        passage: "TEXT 3: Mercy is 'twice blest: It blesseth him that gives and him that takes.'",
+        q: "How does this quote benefit both sides of a dispute?", 
+        options: ["Both get money", "Both receive a moral benefit", "Both win the case", "Both go to jail"], 
+        correct: 1, 
+        explanation: "Portia suggests mercy improves the character of the giver and the life of the taker." 
+    },
+    { 
+        passage: "TEXT 3: Portia argues mercy elevates the legal process to something divine.",
+        q: "According to Portia, mercy is superior to:", 
+        options: ["The King", "Strict earthly power", "The Church", "The Artist"], 
+        correct: 1, 
+        explanation: "She argues mercy is an attribute of God and superior to human force." 
+    },
+    { 
+        passage: "TEXT 2: Individuals have responsibilities. TEXT 3: Shylock demands his pound of flesh.",
+        q: "What would Text 2 say about Shylock’s individual responsibility?", 
+        options: ["He is following the law perfectly", "His lack of mercy erodes social cohesion", "He should be the judge", "He has no responsibility"], 
+        correct: 1, 
+        explanation: "The 'spirit of harmony' is part of the cooperation needed for cohesion." 
+    },
+    { 
+        passage: "TEXT 3: Shylock demands a 'pound of flesh'.",
+        q: "This phrase has become a metaphor for:", 
+        options: ["A fair deal", "A cruel, unreasonable demand", "A medical term", "A type of food"], 
+        correct: 1, 
+        explanation: "It represents someone demanding exactly what they are owed, regardless of suffering." 
+    },
+    { 
+        passage: "GENERAL VOCAB: Identify the synonym for 'Eloquent'.",
+        q: "An eloquent speaker is:", 
+        options: ["Loud", "Persuasive and fluent", "Silent", "Confused"], 
+        correct: 1, 
+        explanation: "Eloquence is the ability to speak clearly and convincingly." 
+    },
+    { 
+        passage: "GENERAL VOCAB: What is an 'Anecdote'?",
+        q: "A speaker tells a short personal story. This is a/an:", 
+        options: ["Antidote", "Anecdote", "Allegory", "Analogy"], 
+        correct: 1, 
+        explanation: "An anecdote is a brief narrative of an incident." 
+    },
+    { 
+        passage: "GENERAL VOCAB: Meaning of 'Pragmatic'?",
+        q: "If a solution is 'pragmatic', it is:", 
+        options: ["Dreamy", "Practical and sensible", "Expensive", "Magical"], 
+        correct: 1, 
+        explanation: "Pragmatism focuses on what works in reality." 
+    },
 
-    // --- Vocabulary in Context ---
-    { q: "What does 'superfluous' mean in: 'His extra explanation was superfluous'?", options: ["Helpful", "Necessary", "Unnecessary", "Clear"], correct: 2, explanation: "Superfluous means more than is needed; redundant." },
-    { q: "Identify the synonym for 'Eloquent' as used in a speech context:", options: ["Loud", "Persuasive", "Long", "Confusing"], correct: 1, explanation: "Eloquent means fluent or persuasive in speaking or writing." },
-
-    // --- Short Passage Comprehension ---
-    { q: "Passage: 'The wind howled through the pines, a lonely sentinel guarding the pass.' What is the 'sentinel'?", options: ["The wind", "The pines", "A soldier", "The pass"], correct: 1, explanation: "The pines are personified as a sentinel (guard)." },
-    { q: "If a text describes a 'pyrrhic victory', it means the winner:", options: ["Won easily", "Lost the battle", "Won at a devastating cost", "Won by cheating"], correct: 2, explanation: "A Pyrrhic victory is one that inflicts such a devastating toll on the victor that it is tantamount to defeat." },
-
-    // --- Critical Thinking & Intent ---
-    { q: "What is the primary purpose of a 'Satire'?", options: ["To inform", "To praise", "To mock and criticize", "To provide instructions"], correct: 2, explanation: "Satire uses humor or irony to expose and criticize people's stupidity or vices." },
-    { q: "If a writer uses 'we' and 'our' frequently, they are trying to create:", options: ["Distance", "Authority", "A sense of inclusion", "Confusion"], correct: 2, explanation: "Inclusive language (we/our) builds a bond between the writer and the reader." },
-
-    // --- Filling to 40 questions (Mix of standard SEHS patterns) ---
-    { q: "Synonym for 'Pragmatic'?", options: ["Dreamy", "Practical", "Angry", "Fast"], correct: 1, explanation: "Practicality over theory." },
-    { q: "Antonym for 'Ephemeral'?", options: ["Short-lived", "Permanent", "Weak", "Fast"], correct: 1, explanation: "Ephemeral means temporary; permanent is the opposite." },
-    { q: "What does 'Ambiguous' mean?", options: ["Very clear", "Having double meaning", "Large", "Bright"], correct: 1, explanation: "Open to more than one interpretation." },
-    { q: "Meaning of 'Venerable'?", options: ["Young", "Respected due to age", "Broken", "Fast"], correct: 1, explanation: "Often used for old, wise figures." },
-    { q: "The word 'Apathy' means:", options: ["Strong hate", "Deep love", "Lack of interest", "Extreme fear"], correct: 2, explanation: "Apathy is a state of indifference." },
-    { q: "In poetry, 'Alliteration' is:", options: ["Rhyming words", "Repetition of vowel sounds", "Repetition of initial consonant sounds", "A type of stanza"], correct: 2, explanation: "e.g., 'Seven silver swans'." },
-    { q: "A 'rebuttal' in a debate is:", options: ["An introduction", "A concluding statement", "A counter-argument", "A personal attack"], correct: 2, explanation: "Refuting the opponent's point." },
-    { q: "If a plot is 'convoluted', it is:", options: ["Simple", "Extremely complex", "Boring", "Short"], correct: 1, explanation: "Difficult to follow." },
-    { q: "Meaning of 'Candour'?", options: ["Sweetness", "Honesty", "Darkness", "Speed"], correct: 1, explanation: "Being open and honest." },
-    { q: "What is a 'Metaphor'?", options: ["Comparison using 'like'", "Directly calling one thing another", "An exaggerated statement", "The sound a word makes"], correct: 1, explanation: "e.g., 'The snow is a white blanket'." },
-    { q: "Identify the odd one out:", options: ["Fiction", "Biography", "Novel", "Short Story"], correct: 1, explanation: "Biography is non-fiction; others are fiction." },
-    { q: "The term 'Ubiquitous' means:", options: ["Rare", "Found everywhere", "Expensive", "Hidden"], correct: 1, explanation: "Present everywhere at once." },
-    { q: "What is 'Irony'?", options: ["Metal-like strength", "When the opposite of what is expected happens", "A very long poem", "A rhythmic beat"], correct: 1, explanation: "Situational or verbal contrast." },
-    { q: "A 'hyperbole' is a/an:", options: ["Understatement", "Exaggeration", "Rhyme", "Short story"], correct: 1, explanation: "e.g., 'I've told you a million times'." },
-    { q: "What does 'Fortuitous' mean?", options: ["Planned", "By lucky chance", "Scary", "Strong"], correct: 1, explanation: "Happening by accident or chance rather than design." },
-    { q: "The word 'Archaic' refers to something:", options: ["Modern", "Ancient/Outdated", "Beautiful", "Technical"], correct: 1, explanation: "From a much earlier period." },
-    { q: "If a text is 'objective', it is:", options: ["Biased", "Fact-based and neutral", "Emotional", "First-person"], correct: 1, explanation: "Not influenced by personal feelings." },
-    { q: "What is an 'Anecdote'?", options: ["A cure for poison", "A short personal story", "A mathematical formula", "A long novel"], correct: 1, explanation: "A brief narrative of an incident." },
-    { q: "Meaning of 'Benevolent'?", options: ["Cruel", "Kind-hearted", "Wealthy", "Famous"], correct: 1, explanation: "Well-meaning." },
-    { q: "What does 'Resilient' mean?", options: ["Fragile", "Able to recover quickly", "Quiet", "Heavy"], correct: 1, explanation: "The ability to bounce back." },
-    { q: "A 'Protagonist' is the:", options: ["Villain", "Main character", "Narrator", "Author"], correct: 1, explanation: "The leading character." },
-    { q: "What is 'Juxtaposition'?", options: ["Two things placed close together for contrast", "A type of fast running", "A rhyming couplet", "A conclusion"], correct: 0, explanation: "Comparing side-by-side." },
-    { q: "Meaning of 'Pensive'?", options: ["Expensive", "Deeply thoughtful", "Angry", "Happy"], correct: 1, explanation: "Reflective or serious thought." },
-    { q: "The 'Setting' of a story is:", options: ["The climax", "The place and time", "The characters", "The moral"], correct: 1, explanation: "Physical and temporal context." },
-    { q: "What does 'Incite' mean?", options: ["To discourage", "To stir up/encourage action", "To look inside", "To cite a source"], correct: 1, explanation: "To provoke or trigger." },
-    { q: "If a person is 'Auspicious', it means they are:", options: ["Suspicious", "Promising success", "Late", "Poor"], correct: 1, explanation: "Conducive to success; favorable." }
-],
+    // --- 31-40: Logic & Language (SEHS Exam focus) ---
+    { 
+        passage: "TEXT 1: The laneways were a labyrinth. TEXT 2: The system is multi-faceted.",
+        q: "Both 'labyrinth' and 'multi-faceted' imply:", 
+        options: ["Simplicity", "Complexity", "Speed", "Boredom"], 
+        correct: 1, 
+        explanation: "Both words describe things with many parts or paths." 
+    },
+    { 
+        passage: "LOGIC: If All A are B, and All B are C, which is true?",
+        q: "Standard Logic Question:", 
+        options: ["Some A are not C", "All A are C", "No A are C", "C is B"], 
+        correct: 1, 
+        explanation: "This is a basic transitive logic rule (Syllogism)." 
+    },
+    { 
+        passage: "TEXT 2: Violent crime (like murder) has high social costs.",
+        q: "Based on the Erin Patterson case, murder has an 'Economic' impact because:", 
+        options: ["It makes people sad", "It costs taxpayers for court/police time", "It changes the weather", "It helps the hospital"], 
+        correct: 1, 
+        explanation: "Taxpayers fund the legal system, which is burdened by crime." 
+    },
+    
+    { 
+        passage: "VOCAB: What is 'Juxtaposition'?",
+        q: "Placing two opposites together to highlight a difference is:", 
+        options: ["Juxtaposition", "Alliteration", "Simile", "Metaphor"], 
+        correct: 0, 
+        explanation: "e.g., placing the 'Neon Lights' next to 'Grey Pavement' in Text 1." 
+    },
+    { 
+        passage: "VOCAB: Meaning of 'Ambiguous'?",
+        q: "If a law is 'ambiguous', it is:", 
+        options: ["Very clear", "Open to more than one interpretation", "Very long", "Written in blue"], 
+        correct: 1, 
+        explanation: "Ambiguity means it is unclear or has double meaning." 
+    },
+    { 
+        passage: "TEXT 2: Collective psychological health declines with crime.",
+        q: "This psychological impact refers to:", 
+        options: ["Physical injuries", "Community fear and trauma", "Court costs", "Hospital beds"], 
+        correct: 1, 
+        explanation: "Psychological health refers to the mental state of the group." 
+    },
+    { 
+        passage: "VOCAB: An 'Ad Hominem' argument is one that:",
+        q: "Logical Fallacy check:", 
+        options: ["Uses facts", "Attacks the person instead of the argument", "Uses math", "Is very short"], 
+        correct: 1, 
+        explanation: "Commonly tested in persuasive text analysis." 
+    },
+    { 
+        passage: "TEXT 3: Portia is the protagonist in this scene.",
+        q: "The 'Protagonist' is always the:", 
+        options: ["Bad guy", "Main character", "Narrator", "Sidekick"], 
+        correct: 1, 
+        explanation: "The central character who drives the action." 
+    },
+    { 
+        passage: "VOCAB: What does 'Resilient' mean?",
+        q: "A cohesive society is 'resilient'. This means it:", 
+        options: ["Breaks easily", "Recovers quickly from difficulty", "Never has problems", "Is very old"], 
+        correct: 1, 
+        explanation: "Resilience is the ability to bounce back." 
+    },
+    { 
+        passage: "TEXT 1, 2, and 3 all address the theme of:",
+        q: "Summary Question:", 
+        options: ["Melbourne's history", "The balance of harmony and law in a community", "The benefits of painting", "Shakespeare's life"], 
+        correct: 1, 
+        explanation: "All three texts look at how individuals and rules create (or break) harmony." 
+    }
+]
 };
 
 const writingPrompts = [
