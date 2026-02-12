@@ -438,21 +438,21 @@ const subjectData = {
         explanation: "An attribute is a feature or quality." 
     },
     { 
-        passage: "TEXT C: '...earthly power doth then show likest God’s When mercy seasons justice.'",
+        passage: "TEXT C: 'earthly power doth then show likest God’s When mercy seasons justice.'",
         q: "Human power is most like God's when:", 
         options: ["Kings are very rich", "Justice is balanced with mercy", "Everyone is punished", "There are no laws"], 
         correct: 1, 
         explanation: "The poem argues that mercy makes justice divine." 
     },
     { 
-        passage: "TEXT C: '...mercy seasons justice.'",
+        passage: "TEXT C: 'mercy seasons justice.'",
         q: "In this sentence, 'seasons' means:", 
         options: ["The four times of year", "Balances/Enhances", "Ends", "Salt and pepper"], 
         correct: 1, 
         explanation: "To season justice is to temper its harshness with compassion." 
     },
     { 
-        passage: "TEXT C: '...sceptred sway.'",
+        passage: "TEXT C: 'sceptred sway.'",
         q: "A 'sceptre' is a:", 
         options: ["Crown", "Staff held by a ruler", "Type of shoe", "Legal book"], 
         correct: 1, 
@@ -473,7 +473,7 @@ const subjectData = {
         explanation: "Twice means two." 
     },
     { 
-        passage: "TEXT C: '...dread and fear of kings.'",
+        passage: "TEXT C: 'dread and fear of kings.'",
         q: "Kings without mercy are associated with:", 
         options: ["Love", "Terror and awe", "Friendship", "Wealth"], 
         correct: 1, 
@@ -756,6 +756,7 @@ function endTest() {
         feedback.innerHTML += `<p class="text-sm"><strong>Q:</strong> ${item.q}<br><span class="text-blue-600">Logic: ${item.explanation}</span></p>`;
     });
 }
+
 
 
 
