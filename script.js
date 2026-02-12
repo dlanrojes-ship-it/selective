@@ -165,285 +165,419 @@ const subjectData = {
     { q: "If yesterday was Tuesday, what is 3 days after tomorrow?", options: ["Friday", "Saturday", "Sunday", "Monday"], correct: 2, explanation: "Today is Wednesday. Tomorrow is Thursday. +3 days = Sunday." }
 ],
  reading: [
-    // --- 1-20: THE NARRATIVE (Text 1 Focus) ---
+    // --- BLOCK 1: THE MARBLE HALLS (Narrative - 15 Qs) ---
     { 
-        passage: "TEXT 1: Elias watched as the neon lights bled into the puddles, a kaleidoscopic stain on the grey pavement... the city was a quiet sentinel.",
-        q: "Which word best describes the atmosphere created in Text 1?", 
-        options: ["Chaotic", "Melancholy and Reflective", "Aggressive", "Industrial"], 
+        passage: "TEXT A: The courthouse stood like a mountain of cold stone, its pillars reaching toward a grey sky. Julian felt the weight of the building—not just the stone, but the history of the decisions made within. To Julian, it was a place where the messy threads of life were finally combed straight.",
+        q: "The courthouse is compared to a 'mountain' to show it is:", 
+        options: ["Natural", "Intimidating and permanent", "Cold", "Under construction"], 
         correct: 1, 
-        explanation: "The focus on neon lights, rain, and quiet observation creates a mood of deep reflection." 
+        explanation: "Mountains are massive and unmoving, representing the strength of the law." 
     },
     { 
-        passage: "TEXT 1: To Elias, the city was a quiet sentinel, watching over the disparate souls who wandered its arteries.",
-        q: "The use of the word 'arteries' suggests that the city is:", 
-        options: ["Dangerous", "A biological, living entity", "Made of metal", "Cold and unfeeling"], 
+        passage: "TEXT A: Julian walked softly, his footsteps swallowed by the heavy red carpet.",
+        q: "The word 'swallowed' creates a mood of:", 
+        options: ["Danger", "Silence and seriousness", "Hunger", "Excitement"], 
         correct: 1, 
-        explanation: "Arteries are part of a living body, implying the city itself is alive." 
+        explanation: "It suggests the environment is quiet and somber." 
     },
     { 
-        passage: "TEXT 1: ...a sense of belonging that felt as thin as the paper in his sketchbook.",
-        q: "The 'thin as paper' metaphor indicates that Elias's connection to the city is:", 
-        options: ["Strong", "Fragile", "Cheap", "Artistic"], 
+        passage: "TEXT A: ...messy threads of life were finally combed straight.",
+        q: "The 'messy threads' represent:", 
+        options: ["Fabric", "Legal disputes", "Hair", "The carpet"], 
         correct: 1, 
-        explanation: "Paper is easily torn, suggesting his sense of belonging could be easily lost." 
+        explanation: "It is a metaphor for the complicated lives and problems people bring to court." 
     },
     { 
-        passage: "TEXT 1: Elias watched as the neon lights bled into the puddles, a kaleidoscopic stain on the grey pavement.",
-        q: "What does 'kaleidoscopic' imply about the lights?", 
-        options: ["They are bright white", "They are broken", "They are colorful and changing", "They are annoying"], 
-        correct: 2, 
-        explanation: "A kaleidoscope creates many colors and patterns; the word describes the vibrant reflection." 
-    },
-    { 
-        passage: "TEXT 1: He knew that one act of malice could shatter this glass-like harmony.",
-        q: "In this sentence, 'harmony' is compared to 'glass' because both are:", 
-        options: ["Clear", "Sharp", "Easily broken", "Expensive"], 
-        correct: 2, 
-        explanation: "Glass is brittle; the comparison shows that peace can be shattered in an instant." 
-    },
-    { 
-        passage: "TEXT 1: He gripped his charcoal, his fingers stained with the dust of a thousand sketches.",
-        q: "The phrase 'a thousand sketches' is an example of:", 
-        options: ["Simile", "Hyperbole", "Oxymoron", "Personification"], 
+        passage: "TEXT A: It was a factory of order in a world that often felt like a storm.",
+        q: "In this sentence, the 'storm' is a metaphor for:", 
+        options: ["Rain", "Social chaos", "A factory fire", "A loud noise"], 
         correct: 1, 
-        explanation: "It is an exaggeration used to show how long Elias has been drawing the city." 
+        explanation: "The storm represents the unpredictability of life outside the law." 
     },
     { 
-        passage: "TEXT 1: To Elias, the city was a quiet sentinel.",
-        q: "A 'sentinel' is most similar to a:", 
-        options: ["Enemy", "Guard", "Statue", "Criminal"], 
+        passage: "TEXT A: The courthouse stood like a mountain... its pillars reaching toward a grey sky.",
+        q: "Identify the literary device: 'The courthouse stood like a mountain'.", 
+        options: ["Metaphor", "Simile", "Personification", "Alliteration"], 
         correct: 1, 
-        explanation: "A sentinel is a soldier or guard whose job is to stand and keep watch." 
+        explanation: "It uses 'like' to make a comparison." 
     },
     { 
-        passage: "TEXT 1: ...the disparate souls who wandered its arteries.",
-        q: "What is the synonym for 'disparate' in this context?", 
-        options: ["Depressed", "Different", "Angry", "Lost"], 
+        passage: "TEXT A: Julian felt the weight of the building.",
+        q: "This 'weight' is most likely:", 
+        options: ["Physical gravity", "The emotional importance of justice", "The height of the roof", "The cost of the stone"], 
         correct: 1, 
-        explanation: "Disparate means essentially different in kind." 
+        explanation: "It refers to the serious nature of legal decisions." 
     },
     { 
-        passage: "TEXT 1: Elias knew that one act of malice could shatter this harmony.",
-        q: "What is the opposite of 'malice'?", 
-        options: ["Hate", "Benevolence", "Speed", "Art"], 
+        passage: "TEXT A: ...thick with the scent of old paper and polished wood.",
+        q: "This sensory detail appeals to the sense of:", 
+        options: ["Sight", "Smell", "Touch", "Taste"], 
         correct: 1, 
-        explanation: "Malice is ill-will; benevolence is kindness." 
+        explanation: "Scent refers to the sense of smell." 
     },
     { 
-        passage: "TEXT 1: ...leaving only the cold echo of the wind against the brickwork.",
-        q: "The word 'echo' suggests a feeling of:", 
-        options: ["Noise", "Emptiness", "Comfort", "Success"], 
+        passage: "TEXT A: Julian walked softly...",
+        q: "Why does Julian walk softly?", 
+        options: ["He is a criminal", "Out of respect for the serious environment", "His shoes are broken", "He is lost"], 
         correct: 1, 
-        explanation: "Echoes occur in empty spaces, adding to the desolate feeling of the end of the text." 
+        explanation: "Soft walking shows respect for the gravity of a courthouse." 
     },
-
-    // --- 11-30: THE REPORT (Text 2 Focus: Social Cohesion) ---
-    
     { 
-        passage: "TEXT 2: Social cohesion is maintained by a triad: individuals, laws, and the legal system.",
-        q: "Which element is NOT part of the 'triad' mentioned in Text 2?", 
-        options: ["Laws", "The Military", "Individuals", "The Legal System"], 
+        passage: "TEXT A: A factory of order.",
+        q: "This implies the court's job is to:", 
+        options: ["Make machines", "Produce fair results", "Build houses", "Collect taxes"], 
         correct: 1, 
-        explanation: "The triad consists of individuals, laws, and the legal system only." 
+        explanation: "A factory produces things; the court 'produces' order." 
     },
     { 
-        passage: "TEXT 2: Laws provide the necessary guidelines for behaviour, ensuring that expectations are clear.",
-        q: "The purpose of laws in this text is to:", 
-        options: ["Punish everyone", "Set clear rules for behaviour", "Create jobs for lawyers", "Limit freedom"], 
+        passage: "TEXT A: ...pillars reaching toward a grey sky.",
+        q: "The 'grey sky' adds to the tone of:", 
+        options: ["Happiness", "Solemnity/Serious mood", "Anger", "Confusion"], 
         correct: 1, 
-        explanation: "The text says laws provide guidelines to make expectations clear." 
+        explanation: "Grey skies often symbolize serious or somber atmospheres." 
     },
     { 
-        passage: "TEXT 2: When laws are breached, the legal system resolves disputes impartially.",
-        q: "What does it mean to resolve a dispute 'impartially'?", 
-        options: ["By taking the side of the police", "By being fair and unbiased", "By making the decision quickly", "By following the majority opinion"], 
+        passage: "TEXT A: Julian walked softly...",
+        q: "What is the opposite of 'softly'?", 
+        options: ["Quietly", "Loudly", "Quickly", "Carefully"], 
         correct: 1, 
-        explanation: "Impartiality means making a decision without showing favoritism." 
+        explanation: "Loudly is the antonym." 
     },
     { 
-        passage: "TEXT 2: A breakdown in social cohesion leads to increased court workloads and pressure on funding.",
-        q: "This pressure on funding is described as an:", 
-        options: ["Emotional cost", "Economic cost", "Physical cost", "Artistic cost"], 
-        correct: 1, 
-        explanation: "Funding and workload are financial/economic concerns for the community." 
-    },
-    
-    { 
-        passage: "TEXT 2: Individuals must fulfill their responsibility to follow the law.",
-        q: "The text suggests that the 'role of the individual' is to:", 
-        options: ["Ignore bad laws", "Be active in following legal guidelines", "Pay for the entire court", "Arrest criminals themselves"], 
-        correct: 1, 
-        explanation: "Individuals have a 'responsibility' to follow the law to maintain cohesion." 
-    },
-    { 
-        passage: "TEXT 2: A rise in violent crime leads to a decline in collective psychological health.",
-        q: "The word 'collective' in this context refers to:", 
-        options: ["The individual criminal", "The judge", "The whole community", "A group of police"], 
-        correct: 2, 
-        explanation: "Collective refers to the shared experience of the entire society." 
-    },
-    { 
-        passage: "TEXT 2: Social cohesion is the 'social glue' that keeps society together.",
-        q: "Why is social cohesion called 'glue'?", 
-        options: ["Because it is sticky", "Because it binds different members of society together", "Because it is hard to see", "Because it is made in factories"], 
-        correct: 1, 
-        explanation: "It is a metaphor for the cooperation that holds a community together." 
-    },
-    { 
-        passage: "TEXT 2: The legal system consists of bodies that make, implement, and enforce law.",
-        q: "Which word is a synonym for 'implement'?", 
-        options: ["Break", "Execute/Apply", "Study", "Design"], 
-        correct: 1, 
-        explanation: "To implement a law means to put it into action." 
-    },
-    { 
-        passage: "TEXT 2: Laws ensure expectations are clear. When laws are breached, the system steps in.",
-        q: "A 'breach' of the law is a:", 
-        options: ["Compliance", "Violation", "Support", "Discussion"], 
-        correct: 1, 
-        explanation: "A breach is a break or violation of a rule." 
-    },
-    { 
-        passage: "TEXT 2: ...willingness of society members to cooperate to survive and prosper.",
-        q: "To 'prosper' most likely means to:", 
-        options: ["Stay the same", "Fail", "Thrive and succeed", "Hide"], 
-        correct: 2, 
-        explanation: "Prosperity involves growth and success in a society." 
-    },
-
-    // --- 31-50: THE CLASSICAL (Text 3 Focus: Shakespeare) ---
-    { 
-        passage: "TEXT 3: 'The quality of mercy is not strained; It droppeth as the gentle rain from heaven...'",
-        q: "What does 'strained' mean in this first line?", 
-        options: ["Filtered", "Forced", "Filtered", "Tired"], 
-        correct: 1, 
-        explanation: "Portia says mercy isn't forced; it comes naturally." 
-    },
-    { 
-        passage: "TEXT 3: 'It is twice blest: It blesseth him that gives and him that takes.'",
-        q: "According to Portia, who benefits from mercy?", 
-        options: ["Only the person receiving it", "Only the person giving it", "Both the giver and the receiver", "Neither person"], 
-        correct: 2, 
-        explanation: "She says it is 'twice blest' because it helps both sides." 
-    },
-    { 
-        passage: "TEXT 3: 'His sceptre shows the force of temporal power... but mercy is above this sceptred sway.'",
-        q: "The 'sceptre' represents:", 
-        options: ["Divine love", "Earthly, physical authority", "A musical instrument", "A religious book"], 
-        correct: 1, 
-        explanation: "The sceptre is a symbol of a king's earthly (temporal) rule." 
-    },
-    { 
-        passage: "TEXT 3: '...it becomes / The throned monarch better than his crown.'",
-        q: "What does 'becomes' mean here?", 
-        options: ["To turn into", "To suit or look good on", "To arrive at", "To fail"], 
-        correct: 1, 
-        explanation: "In old English, to 'become' someone means to suit or be appropriate for them." 
-    },
-    { 
-        passage: "TEXT 3: 'And earthly power doth then show likest God’s When mercy seasons justice.'",
-        q: "How does mercy 'season' justice?", 
-        options: ["By making it salty", "By balancing it and making it more perfect", "By removing justice entirely", "By making justice happen faster"], 
-        correct: 1, 
-        explanation: "Like seasoning improves food, mercy balances the harshness of justice." 
-    },
-    { 
-        passage: "TEXT 3: Shylock demands his pound of flesh, choosing the letter of the law over harmony.",
-        q: "Shylock's behavior is the opposite of:", 
-        options: ["Strictness", "Social Cohesion", "Reading", "Wealth"], 
-        correct: 1, 
-        explanation: "By demanding his literal right over compassion, he breaks social harmony." 
-    },
-    { 
-        passage: "TEXT 3: '...the dread and fear of kings; But mercy is above this sceptred sway.'",
-        q: "Portia argues that mercy is based on:", 
-        options: ["Fear", "Force", "The Heart/God", "Money"], 
-        correct: 2, 
-        explanation: "She says mercy is 'enthroned in the hearts' and is an 'attribute to God'." 
-    },
-    { 
-        passage: "TEXT 3: 'The quality of mercy is not strained; It droppeth as the gentle rain...'",
-        q: "Identify the literary device used with 'gentle rain':", 
-        options: ["Simile", "Metaphor", "Alliteration", "Onomatopoeia"], 
+        passage: "TEXT A: ...history of decisions made within these walls.",
+        q: "This refers to the concept of:", 
+        options: ["Precedent", "Future", "Furniture", "Art"], 
         correct: 0, 
-        explanation: "It uses 'as' to compare mercy to rain." 
+        explanation: "Precedent is the legal history of past decisions." 
     },
     { 
-        passage: "TEXT 3: Portia argues mercy elevates the legal process to something divine.",
-        q: "What does 'divine' mean?", 
-        options: ["Broken", "Relating to God", "Very fast", "Secret"], 
+        passage: "TEXT A: ...pillars reaching toward a grey sky.",
+        q: "The pillars represent:", 
+        options: ["Weakness", "Stability and support", "Trees", "Windows"], 
         correct: 1, 
-        explanation: "Divine refers to god-like qualities." 
+        explanation: "Pillars are architectural symbols of strength." 
     },
     { 
-        passage: "TEXT 3: Portia is trying to persuade Shylock to be merciful.",
-        q: "The tone of Portia's speech is:", 
-        options: ["Angry", "Persuasive and Eloquent", "Funny", "Confused"], 
+        passage: "TEXT A: To Julian, it was a place where the messy threads of life were finally combed straight.",
+        q: "Julian’s attitude toward the law is:", 
+        options: ["Hostile", "Appreciative/Positive", "Bored", "Terrified"], 
         correct: 1, 
-        explanation: "She is making a sophisticated argument for compassion." 
+        explanation: "He sees the law as a way to fix 'messy' problems." 
+    },
+    { 
+        passage: "TEXT A: Julian felt the weight of the building.",
+        q: "Which word is a synonym for 'weight' in this context?", 
+        options: ["Lightness", "Gravitas", "Dust", "Shadow"], 
+        correct: 1, 
+        explanation: "Gravitas means seriousness or solemnity." 
     },
 
-    // --- 51-60: VOCABULARY & LOGIC (Selective Prep) ---
+    // --- BLOCK 2: THE CIVIL CONTRACT (Informative - 15 Qs) ---
+    
     { 
-        passage: "VOCAB: If a writer is 'Cynical', they are likely to be:", 
-        options: ["Very optimistic", "Distrustful of human motives", "Highly religious", "Easily confused"], 
+        passage: "TEXT B: Civil law serves as a vital framework for resolving disagreements. Unlike criminal law, which focuses on punishment, civil law seeks 'remedy'—a way to make up for a loss. This system relies on the 'balance of probabilities.'",
+        q: "The main goal of civil law is:", 
+        options: ["Punishment", "Remedy/Compensation", "Jail time", "Creating new taxes"], 
         correct: 1, 
-        explanation: "Cynicism involves doubting that people are sincere." 
+        explanation: "Text B states civil law seeks a remedy to make up for loss." 
     },
     { 
-        passage: "VOCAB: What is the meaning of 'Pragmatic'?", 
-        options: ["Dreamy", "Dealing with things sensibly and realistically", "Very loud", "Angry"], 
+        passage: "TEXT B: ...relies on the 'balance of probabilities'.",
+        q: "This standard of proof means:", 
+        options: ["100% certainty", "More likely than not", "A random guess", "Scientific proof only"], 
         correct: 1, 
-        explanation: "Pragmatism is about being practical." 
+        explanation: "Balance of probabilities means one side is more likely to be true than the other." 
     },
     { 
-        passage: "LOGIC: All lawyers know the law. John knows the law. Therefore:", 
-        options: ["John is a lawyer", "John might be a lawyer", "John is not a lawyer", "Lawyers are called John"], 
+        passage: "TEXT B: ...personal grievances would lead to perpetual feuds.",
+        q: "A 'perpetual feud' is a conflict that:", 
+        options: ["Ends quickly", "Never ends", "Is solved by a judge", "Is friendly"], 
         correct: 1, 
-        explanation: "Just because all lawyers know the law doesn't mean *everyone* who knows the law is a lawyer." 
+        explanation: "Perpetual means continuing forever." 
     },
     { 
-        passage: "VOCAB: An 'Oxymoron' is:", 
-        options: ["A type of gas", "A phrase with contradictory terms", "A long poem", "A smart person"], 
+        passage: "TEXT B: Civil law is a framework for resolving disagreements.",
+        q: "A 'framework' is most like a:", 
+        options: ["Picture", "Structure/System", "Window", "Wall"], 
         correct: 1, 
-        explanation: "e.g., 'bittersweet'." 
+        explanation: "A framework is a basic structure underlying a system." 
     },
     { 
-        passage: "TEXT 1: Neon lights. TEXT 2: Legal guidelines. TEXT 3: Sceptred sway.", 
-        q: "Which word from the three texts is most likely to be an 'archaic' word?", 
-        options: ["Neon", "Guidelines", "Sceptred", "Lights"], 
-        correct: 2, 
-        explanation: "Archaic means old-fashioned or no longer in common use." 
+        passage: "TEXT B: ...eroding the trust required for a stable economy.",
+        q: "What does 'erode' mean?", 
+        options: ["Build up", "Wear away slowly", "Clean", "Ignore"], 
+        correct: 1, 
+        explanation: "Erosion is the gradual destruction of something." 
     },
     { 
-        passage: "VOCAB: Meaning of 'Ambiguous'?", 
-        options: ["Clear", "Open to more than one interpretation", "Very large", "Quiet"], 
+        passage: "TEXT B: ...the trust required for a stable economy.",
+        q: "Why is trust needed for an economy?", 
+        options: ["To buy more clothes", "So people can trade and do business safely", "To pay lawyers", "To build courthouses"], 
         correct: 1, 
-        explanation: "Ambiguity means something is unclear or has double meaning." 
+        explanation: "Economies rely on the belief that contracts and laws will be followed." 
+    },
+    { 
+        passage: "TEXT B: Unlike criminal law, which focuses on punishment...",
+        q: "The text suggests that criminal law is:", 
+        options: ["Kinder than civil law", "Punitive (focused on punishment)", "Only for rich people", "Irrelevant"], 
+        correct: 1, 
+        explanation: "It contrasts civil law with the punitive nature of criminal law." 
+    },
+    { 
+        passage: "TEXT B: ...civil law seeks 'remedy'.",
+        q: "If you lose money in a deal, a 'remedy' would be:", 
+        options: ["An apology", "Getting the money back", "Going to jail", "Starting a feud"], 
+        correct: 1, 
+        explanation: "Remedy in civil law usually involves financial compensation." 
+    },
+    { 
+        passage: "TEXT B: This system relies on a judge.",
+        q: "The role of the judge in civil law is to:", 
+        options: ["Arrest people", "Decide based on the balance of probabilities", "Write the laws", "Watch the news"], 
+        correct: 1, 
+        explanation: "Judges apply the standard of proof to settle the dispute." 
+    },
+    { 
+        passage: "TEXT B: ...personal grievances...",
+        q: "A 'grievance' is a:", 
+        options: ["Gift", "Complaint/Injustice", "New law", "Happy memory"], 
+        correct: 1, 
+        explanation: "A grievance is a real or imagined wrong or cause for complaint." 
+    },
+    { 
+        passage: "TEXT B: ...stable community.",
+        q: "Stability in a community means it is:", 
+        options: ["Changing every day", "Secure and reliable", "Dangerous", "Empty"], 
+        correct: 1, 
+        explanation: "Stability refers to being steady and not likely to fail." 
+    },
+    { 
+        passage: "TEXT B: ...resolving disagreements between individuals.",
+        q: "Who is civil law for?", 
+        options: ["Only the government", "Disputes between people/companies", "The police only", "Criminals"], 
+        correct: 1, 
+        explanation: "Civil law handles private disputes between parties." 
+    },
+    { 
+        passage: "TEXT B: ...vital framework.",
+        q: "If something is 'vital', it is:", 
+        options: ["Unimportant", "Essential/Necessary", "Small", "Old"], 
+        correct: 1, 
+        explanation: "Vital means absolutely necessary for life or success." 
+    },
+    { 
+        passage: "TEXT B: ...without this mechanism...",
+        q: "A 'mechanism' in this context is a:", 
+        options: ["Robot", "Process/Method", "Car engine", "Clock"], 
+        correct: 1, 
+        explanation: "It refers to the legal process as a tool for society." 
+    },
+    { 
+        passage: "TEXT B: ...eroding the trust.",
+        q: "What is the synonym for 'trust' in this context?", 
+        options: ["Doubt", "Confidence", "Money", "Hate"], 
+        correct: 1, 
+        explanation: "Confidence is a synonym for trust in a system." 
+    },
+
+    // --- BLOCK 3: THE MERCHANT'S PLEA (Classical - 15 Qs) ---
+    { 
+        passage: "TEXT C: 'The quality of mercy is not strained; It droppeth as the gentle rain from heaven... It is twice blest: It blesseth him that gives and him that takes.'",
+        q: "Portia says mercy is 'not strained'. This means it:", 
+        options: ["Is filtered", "Cannot be forced", "Is very strong", "Is difficult to read"], 
+        correct: 1, 
+        explanation: "Mercy must be given freely, not squeezed out of someone." 
+    },
+    { 
+        passage: "TEXT C: 'It droppeth as the gentle rain from heaven.'",
+        q: "The rain metaphor suggests mercy is:", 
+        options: ["Wet", "A natural blessing", "Destructive", "Seasonal"], 
+        correct: 1, 
+        explanation: "Rain is a natural gift that nourishes the earth." 
+    },
+    { 
+        passage: "TEXT C: '...twice blest: It blesseth him that gives and him that takes.'",
+        q: "Mercy is better than a typical gift because:", 
+        options: ["It is free", "It rewards the giver as much as the receiver", "It is legal", "It happens twice"], 
+        correct: 1, 
+        explanation: "Portia argues that the person showing mercy feels moral joy." 
+    },
+    { 
+        passage: "TEXT C: '...it becomes / The throned monarch better than his crown.'",
+        q: "A monarch is a:", 
+        options: ["Soldier", "King or Queen", "Merchant", "Judge"], 
+        correct: 1, 
+        explanation: "A monarch is a royal ruler." 
+    },
+    { 
+        passage: "TEXT C: 'His sceptre shows the force of temporal power...'",
+        q: "The word 'temporal' refers to:", 
+        options: ["Short time", "Earthly/Worldly power", "Magical power", "The weather"], 
+        correct: 1, 
+        explanation: "Temporal power is the physical power of law and kings on earth." 
+    },
+    { 
+        passage: "TEXT C: 'But mercy is above this sceptred sway.'",
+        q: "Portia argues that mercy is:", 
+        options: ["Weaker than a king's staff", "More powerful than earthly authority", "Only for poor people", "A type of jewelry"], 
+        correct: 1, 
+        explanation: "She places mercy above the physical symbols of power." 
+    },
+    { 
+        passage: "TEXT C: 'It is enthroned in the hearts of kings.'",
+        q: "This metaphor suggests mercy is:", 
+        options: ["Internal and sincere", "A physical chair", "Expensive", "Cold"], 
+        correct: 0, 
+        explanation: "Being 'enthroned in the heart' means it is a deep, internal value." 
+    },
+    { 
+        passage: "TEXT C: '...it is an attribute to God himself.'",
+        q: "An 'attribute' is a:", 
+        options: ["Question", "Quality or characteristic", "Mistake", "Gift"], 
+        correct: 1, 
+        explanation: "An attribute is a feature or quality." 
+    },
+    { 
+        passage: "TEXT C: '...earthly power doth then show likest God’s When mercy seasons justice.'",
+        q: "Human power is most like God's when:", 
+        options: ["Kings are very rich", "Justice is balanced with mercy", "Everyone is punished", "There are no laws"], 
+        correct: 1, 
+        explanation: "The poem argues that mercy makes justice divine." 
+    },
+    { 
+        passage: "TEXT C: '...mercy seasons justice.'",
+        q: "In this sentence, 'seasons' means:", 
+        options: ["The four times of year", "Balances/Enhances", "Ends", "Salt and pepper"], 
+        correct: 1, 
+        explanation: "To season justice is to temper its harshness with compassion." 
+    },
+    { 
+        passage: "TEXT C: '...sceptred sway.'",
+        q: "A 'sceptre' is a:", 
+        options: ["Crown", "Staff held by a ruler", "Type of shoe", "Legal book"], 
+        correct: 1, 
+        explanation: "A sceptre is a symbolic staff used by royalty." 
+    },
+    { 
+        passage: "TEXT C: 'The quality of mercy is not strained.'",
+        q: "What is the synonym for 'strained' in this context?", 
+        options: ["Filtered", "Coerced/Forced", "Tired", "Injured"], 
+        correct: 1, 
+        explanation: "If something is strained, it is done with effort or force." 
+    },
+    { 
+        passage: "TEXT C: 'It is twice blest.'",
+        q: "How many blessings does mercy provide according to the text?", 
+        options: ["One", "Two", "Three", "Many"], 
+        correct: 1, 
+        explanation: "Twice means two." 
+    },
+    { 
+        passage: "TEXT C: '...dread and fear of kings.'",
+        q: "Kings without mercy are associated with:", 
+        options: ["Love", "Terror and awe", "Friendship", "Wealth"], 
+        correct: 1, 
+        explanation: "The text says 'dread and fear' sit with the sceptre of a king." 
+    },
+    { 
+        passage: "TEXT C: 'It droppeth as the gentle rain...'",
+        q: "The tone of this line is:", 
+        options: ["Violent", "Serene/Peaceful", "Angry", "Scientific"], 
+        correct: 1, 
+        explanation: "'Gentle rain' creates a peaceful, natural tone." 
+    },
+
+    // --- BLOCK 4: LOGIC & VOCABULARY (General - 15 Qs) ---
+    { 
+        passage: "VOCAB: The judge gave a 'lucid' explanation of the law.",
+        q: "What does 'lucid' mean?", 
+        options: ["Confusing", "Clear and easy to understand", "Very long", "Angry"], 
+        correct: 1, 
+        explanation: "Lucid means clear and easy to follow." 
+    },
+    { 
+        passage: "LOGIC: All mammals have backbones. A whale is a mammal. Therefore:", 
+        options: ["A whale has no bones", "A whale has a backbone", "All backbones are whales", "Whales are fish"], 
+        correct: 1, 
+        explanation: "This is a basic deductive syllogism." 
+    },
+    { 
+        passage: "VOCAB: What is an 'Allegory'?", 
+        options: ["A short personal story", "A story with a hidden moral or political meaning", "A mathematical rule", "A list of definitions"], 
+        correct: 1, 
+        explanation: "An allegory uses symbols to tell a deeper story." 
+    },
+    { 
+        passage: "VOCAB: If a law is 'Obsolete', it is:", 
+        options: ["Brand new", "No longer used or useful", "Very strict", "Written in blue"], 
+        correct: 1, 
+        explanation: "Obsolete means out of date." 
     },
     { 
         passage: "VOCAB: What is a 'Euphemism'?", 
-        options: ["A loud sound", "A mild word substituted for a harsh one", "A type of bird", "A long bridge"], 
+        options: ["A loud sound", "A mild word used to replace a harsh one", "A type of bird", "A logical error"], 
         correct: 1, 
-        explanation: "e.g., 'passed away' instead of 'died'." 
+        explanation: "e.g., 'Passed away' instead of 'died'." 
     },
     { 
-        passage: "VOCAB: If you are 'Resilient', you can:", 
-        options: ["Run fast", "Bounce back from trouble", "Speak many languages", "Sleep well"], 
+        passage: "VOCAB: Meaning of the word 'Arbitrary'?", 
+        options: ["Planned carefully", "Based on random choice/whim", "Very old", "Legal"], 
         correct: 1, 
-        explanation: "Resilience is the ability to recover from difficulty." 
+        explanation: "Arbitrary decisions have no clear rule or reason." 
     },
     { 
-        passage: "VOCAB: 'Juxtaposition' means placing two things together to:", 
-        options: ["Hide them", "Show their contrast", "Make them the same", "Destroy them"], 
+        passage: "VOCAB: A 'Protagonist' is the:", 
+        options: ["Main character", "Villain", "Narrator", "Assistant"], 
+        correct: 0, 
+        explanation: "The central figure of a story." 
+    },
+    { 
+        passage: "VOCAB: What is 'Juxtaposition'?", 
+        options: ["A journey", "Placing two things together for contrast", "A closing statement", "A type of rhyme"], 
         correct: 1, 
-        explanation: "Juxtaposing shows how different two things are." 
+        explanation: "It highlights the differences between two things." 
+    },
+    { 
+        passage: "VOCAB: 'Ambiguous' means:", 
+        options: ["Very clear", "Open to more than one interpretation", "Extremely fast", "Quiet"], 
+        correct: 1, 
+        explanation: "Ambiguity means it can be understood in multiple ways." 
+    },
+    { 
+        passage: "VOCAB: If you are 'Vindicated', you are:", 
+        options: ["Found guilty", "Cleared of blame", "Pushed down", "Forgotten"], 
+        correct: 1, 
+        explanation: "To vindicate is to prove someone was not at fault." 
     },
     { 
         passage: "LOGIC: Which word does NOT belong?", 
         options: ["Solicitor", "Barrister", "Judge", "Artist"], 
         correct: 3, 
-        explanation: "The first three are legal professions; an artist is not." 
+        explanation: "The first three are legal roles; the last is not." 
+    },
+    { 
+        passage: "VOCAB: An 'Adversary' is a/an:", 
+        options: ["Friend", "Opponent", "Teacher", "Tool"], 
+        correct: 1, 
+        explanation: "An adversary is an enemy or rival." 
+    },
+    { 
+        passage: "VOCAB: What is 'Alliteration'?", 
+        options: ["Rhyming words", "Repetition of initial consonant sounds", "A long essay", "A type of metaphor"], 
+        correct: 1, 
+        explanation: "e.g., 'Safe and sound'." 
+    },
+    { 
+        passage: "VOCAB: If you are 'Resilient', you:", 
+        options: ["Break easily", "Recover quickly from difficulty", "Speak loudly", "Are very old"], 
+        correct: 1, 
+        explanation: "Resilience is the ability to bounce back." 
+    },
+    { 
+        passage: "VOCAB: A 'Meticulous' person is:", 
+        options: ["Messy", "Careful and precise", "Very fast", "Lazy"], 
+        correct: 1, 
+        explanation: "They pay great attention to detail." 
     }
 ]
 };
@@ -622,4 +756,5 @@ function endTest() {
         feedback.innerHTML += `<p class="text-sm"><strong>Q:</strong> ${item.q}<br><span class="text-blue-600">Logic: ${item.explanation}</span></p>`;
     });
 }
+
 
